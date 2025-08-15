@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Payments</title>
+    <title>⭐ Star Collector</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
-    <div id="app">
-        <div id="user-info"></div>
-        <div id="payment-section"></div>
+    <div class="container">
+        <div class="user-card">
+            <img id="user-avatar" src="" alt="Profile" class="avatar">
+            <h2 id="username">Loading...</h2>
+            <p id="user-id"></p>
+            
+            <div class="stars-display">
+                <span id="stars-count">0</span> ⭐
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button id="buy-button" class="tg-button">
+                <span class="button-text">Get 20 Stars</span>
+                <span class="button-price">20 XTR</span>
+            </button>
+        </div>
+        
+        <div class="info-text">
+            Support our channel and get stars for exclusive content!
+        </div>
     </div>
 </body>
 </html>
