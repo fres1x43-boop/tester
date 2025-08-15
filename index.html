@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⭐ Star Collector</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Star Balance</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="user-card">
-            <img id="user-avatar" src="" alt="Profile" class="avatar">
-            <h2 id="username">Loading...</h2>
-            <p id="user-id"></p>
-            
-            <div class="stars-display">
-                <span id="stars-count">0</span> ⭐
+        <div class="profile-card">
+            <img id="user-avatar" src="" alt="Avatar">
+            <h2 id="user-name">Loading...</h2>
+            <p id="user-id">ID: </p>
+            <div class="balance">
+                ⭐ <span id="star-balance">0</span> stars
             </div>
         </div>
-        
-        <div class="action-buttons">
-            <button id="buy-button" class="tg-button">
-                <span class="button-text">Get 20 Stars</span>
-                <span class="button-price">20 XTR</span>
-            </button>
-        </div>
-        
-        <div class="info-text">
-            Support our channel and get stars for exclusive content!
-        </div>
+
+        <button id="topup-button" class="tg-button">Top Up Stars</button>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
